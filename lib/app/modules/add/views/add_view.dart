@@ -12,7 +12,7 @@ class AddView extends GetView<AddController> {
     
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Product'),
+        title: Text('Add'),
         centerTitle: true,
       ),
       body: Padding(

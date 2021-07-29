@@ -1,4 +1,3 @@
-import 'package:c_r_u_d_get_x/app/data/providers/product_provider.dart';
 import 'package:c_r_u_d_get_x/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
@@ -8,24 +7,20 @@ import '../controllers/home_controller.dart';
 import './item_view.dart';
 
 class HomeView extends GetView<HomeController> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeView'),
+        title: Text('Home'),
         centerTitle: true,
         actions: [
           IconButton(
             splashRadius: 26,
-            onPressed: () => Get.changeTheme(Get.isDarkMode ? ThemeData.light() : ThemeData.dark()),
+            onPressed: () => Get.changeTheme(
+              Get.isDarkMode ? ThemeData.light() : ThemeData.dark(),
+            ),
             icon: Icon(Icons.color_lens_outlined),
           ),
-          // IconButton(
-          //   splashRadius: 26,
-          //   onPressed: controller.tessdata,
-          //   icon: Icon(Icons.remove_red_eye_outlined),
-          // ),
         ],
       ),
       body: Obx(

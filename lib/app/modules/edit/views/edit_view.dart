@@ -15,7 +15,7 @@ class EditView extends GetView<EditController> {
     controller.name.text = data.name!;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Edit Product'),
+        title: Text('Edit'),
         centerTitle: true,
       ),
       body: Padding(
@@ -36,7 +36,7 @@ class EditView extends GetView<EditController> {
             ElevatedButton(
               onPressed: () =>
                    homeC.edit(Get.arguments,controller.name.text),
-              child: Text("Add Product"),
+              child: Text("Edit Product"),
             )
           ],
         ),
